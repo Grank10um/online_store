@@ -1,13 +1,13 @@
 import React, { useContext } from 'react'
 import{Switch, Redirect, Route} from "react-router-dom"
-import { Context } from '..';
+import { Context } from '../index';
 import { authRoutes, publicRoutes } from '../routes';
 import { SHOP_ROUTE } from '../utils/consts';
 
 const AppRouter = ()=> {
     const {user} = useContext(Context)
     console.log(user)
-    const isAuth = true //заглушка временная
+    const isAuth = false //заглушка временная
     return (
         <Switch>
             {user.isAuth && authRoutes.map(({path, Component})=>
@@ -21,4 +21,4 @@ const AppRouter = ()=> {
     );
 };
 
-export default AppRouter
+export default AppRouter;
