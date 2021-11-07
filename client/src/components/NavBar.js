@@ -18,8 +18,8 @@ export const NavBar = observer(()=> {
         <NavLink style={{ color: 'white' }} to={SHOP_ROUTE}>BUY DeviCe</NavLink>
         {user._isAuth ?
           <Nav className="justify-content-end" style={{ color: "white" }}>
-            <Button variant="outline-light" className="ml-2" >Админ панель</Button>
-            <Button variant="outline-light" className="ml-2" >Войти</Button>
+            <Button variant="outline-light"  >Админ панель</Button>
+            <Button variant="outline-light" className="mx-md-2" >Войти</Button>
           </Nav>
           :
           <Nav className="justify-content-end" style={{ color: "white" }}>
