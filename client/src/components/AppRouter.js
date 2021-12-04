@@ -7,7 +7,7 @@ import { SHOP_ROUTE } from '../utils/consts';
 const AppRouter = ()=> {
     const {user} = useContext(Context)
     console.log(user)
-    const isAuth = false //заглушка временная
+    const isAuth = false //заглушк а временная
     return (
         <Switch>
             {user.isAuth && authRoutes.map(({path, Component})=>
